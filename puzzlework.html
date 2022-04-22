@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>puzzle</title>
+ <link rel="stylesheet" href="puzzleStyle.css">
+</head>
+<body>
+  <h1>puzzle game practice</h1>
+  <h2>Here is an interesting sudoku game.</h2>
+
+  <img src="puzzlePic.png" width="600px" height="600px">
+  <br />
+
+  <button onclick="askAnswer1()">question 1</button>
+  <button onclick="askAnswer2()">question 2</button>
+  <button onclick="askAnswer3()">question 3</button>
+  <button onclick="askAnswer4()">question 4</button>
+  <button onclick="askAnswer5()">question 5</button>
+  <button onclick="askAnswer6()">question 6</button>
+  <button onclick="askAnswer7()">question 7</button>
+
+  <h3 class="q1" id=a1>question1</h3>
+  <h3 class="q2" id=a2>question2</h3>
+  <h3 class="q3" id=a3>question3</h3>
+  <h3 class="q4" id=a4>question4</h3>
+  <h3 class="q5" id=a5>question5</h3>
+  <h3 class="q6" id=a6>question6</h3>
+  <h3 class="q7" id=a7>question7</h3>
+
+  <button onclick="checkAnswer()">submit!</button>
+
+  <script>
+  var answer1 = 0
+  var answer2 = 0
+  var answer3 = 0
+  var answer4 = 0
+  var answer5 = 0
+  var answer6 = 0
+  var answer7 = 0
+
+
+  function askName(){
+     var name = prompt("Nice to meet you! Please tell me your name.");
+     alert("Hello " + name + "!");
+   }
+   askName()
+
+   function askAnswer1(){
+     answer1 = prompt("What's the number? fill in the blanks with single number: 1,2,3 or 4.")
+     if(answer1){
+       document.getElementById("a1").innerHTML = answer1
+     }
+   }
+
+   function askAnswer2(){
+     answer2 = prompt("What's the number? fill in the blanks with single number: 1,2,3 or 4.")
+     if(answer2){
+       document.getElementById("a2").innerHTML = answer2
+     }
+   }
+
+   function askAnswer3(){
+     answer3 = prompt("What's the number? fill in the blanks with single number: 1,2,3 or 4.")
+     if(answer3){
+       document.getElementById("a3").innerHTML = answer3
+     }
+   }
+
+   function askAnswer4(){
+     answer4 = prompt("What's the number? fill in the blanks with single number: 1,2,3 or 4.")
+     if(answer4){
+       document.getElementById("a4").innerHTML = answer4
+     }
+   }
+
+   function askAnswer5(){
+     answer5 = prompt("What's the number? fill in the blanks with single number: 1,2,3 or 4.")
+     if(answer5){
+       document.getElementById("a5").innerHTML = answer5
+     }
+   }
+
+   function askAnswer6(){
+     answer6 = prompt("What's the number? fill in the blanks with single number: 1,2,3 or 4.")
+     if(answer6){
+       document.getElementById("a6").innerHTML = answer6
+     }
+   }
+
+   function askAnswer7(){
+     answer7 = prompt("What's the number? fill in the blanks with single number: 1,2,3 or 4.")
+     if(answer7){
+       document.getElementById("a7").innerHTML = answer7
+     }
+   }
+
+   function checkAnswer(){
+
+if(answer1 == 2 && answer2 == 4 && answer3 == 2 && answer4 == 1 &&answer5 == 3 && answer6 == 3 && answer7 == 2){
+  alert("Congratulations! You've got the right answers!")
+}
+else {
+  alert("Sorry, your answers are not correct. Please try again and make sure you fill in the blanks with single number 1,2,3 or 4.")
+}
+   }
+
+  </script>
+</body>
+</html>

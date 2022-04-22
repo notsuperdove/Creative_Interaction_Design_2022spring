@@ -1,0 +1,59 @@
+body{
+  background-image:url("bg1.png");
+  background-repeat:repeat-x;
+  background-size:cover;
+}
+
+h1{
+  background-color: orange;
+  padding:15px;
+  color:white;
+}
+
+h2{
+  color:orange;
+  padding:10px;
+}
+
+h3.q1{
+  position: absolute;
+  top: 240px;
+  left: 40px;
+  color: orange;
+}
+h3.q2{
+  position: absolute;
+  top: 240px;
+  left: 335px;
+  color: orange;
+}
+h3.q3{
+  position: absolute;
+  top: 380px;
+  left: 335px;
+  color: orange;
+}
+h3.q4{
+  position: absolute;
+  top: 530px;
+  left: 40px;
+  color: orange;
+}
+h3.q5{
+  position: absolute;
+  top: 530px;
+  left: 335px;
+  color: orange;
+}
+h3.q6{
+  position: absolute;
+  top: 670px;
+  left: 185px;
+  color: orange;
+}
+h3.q7{
+  position: absolute;
+  top: 670px;
+  left: 480px;
+  color: orange;
+}
